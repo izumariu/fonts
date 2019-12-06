@@ -47,6 +47,10 @@ if (flavor[1] == "36c3") {
   console.log("36c3 flavor activated!");
   document.body.style.visibility = "hidden";
   waitForLoad();
+  window.setInterval(function(){
+  	[].slice.call(document.getElementsByClassName("imgstadion")).map(i => i.src="https://raw.githubusercontent.com/izumariu/iris-flavor/master/stadium.png");
+		[].slice.call(document.getElementsByClassName("imgflughafen")).map(i => i.src="https://raw.githubusercontent.com/izumariu/iris-flavor/master/plane.png")
+	}, 300);
   document.body.style.visibility = "visible";
 
 }
